@@ -12,12 +12,4 @@
 
   <artifactId>lab-4-core</artifactId>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-test</artifactId>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-
 </project>

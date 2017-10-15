@@ -1,3 +1,5 @@
+package lab.model;
+
 import static org.junit.Assert.assertEquals;
 
 import lab.model.Country;

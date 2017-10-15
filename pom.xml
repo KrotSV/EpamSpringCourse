@@ -16,12 +16,25 @@
   <dependencyManagement>
     <dependencies>
 
-      <!-- Spring Test -->
+      <!-- AOP Alliance -->
       <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-test</artifactId>
-        <version>5.0.0.RELEASE</version>
-        <scope>test</scope>
+        <groupId>aopalliance</groupId>
+        <artifactId>aopalliance</artifactId>
+        <version>1.0</version>
+      </dependency>
+
+      <!-- AspectJ Runtime -->
+      <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjrt</artifactId>
+        <version>1.8.11</version>
+      </dependency>
+
+      <!-- AspectJ Weaver -->
+      <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>1.8.11</version>
       </dependency>
 
     </dependencies>
@@ -80,6 +93,14 @@
       <version>${spring.version}</version>
     </dependency>
 
+    <!-- Spring Test -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>5.0.0.RELEASE</version>
+      <scope>test</scope>
+    </dependency>
+
     <!-- JUnit -->
     <dependency>
       <groupId>junit</groupId>
@@ -115,6 +136,7 @@
   <modules>
     <module>lab-3-core</module>
     <module>lab-4-core</module>
+    <module>lab-5-aop</module>
   </modules>
 
 </project>
