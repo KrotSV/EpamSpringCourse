@@ -9,11 +9,11 @@
     <property name="country" ref="country"/>
     <property name="age" value="35"/>
     <property name="height" value="1.78F"/>
-    <property name="isProgrammer" value="true"/>
+    <property name="programmer" value="true"/>
     <property name="contacts">
       <list>
-        <value>"asd@asd.ru"</value>
-        <value>"+7-234-456-67-89"</value>
+        <value>asd@asd.ru</value>
+        <value>+7-234-456-67-89</value>
       </list>
     </property>
   </bean>

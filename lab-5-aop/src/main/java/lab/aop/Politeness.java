@@ -1,6 +1,5 @@
 package lab.aop;
 
-
 import lab.model.Customer;
 import lab.model.CustomerBrokenException;
 import lab.model.Squishee;

@@ -14,12 +14,6 @@
 
   <dependencies>
 
-    <!-- AOP Alliance -->
-    <dependency>
-      <groupId>aopalliance</groupId>
-      <artifactId>aopalliance</artifactId>
-    </dependency>
-
     <!-- AspectJ Runtime -->
     <dependency>
       <groupId>org.aspectj</groupId>

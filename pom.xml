@@ -11,30 +11,25 @@
 
   <properties>
     <spring.version>5.0.0.RELEASE</spring.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <aspectj.version>1.8.11</aspectj.version>
   </properties>
 
   <dependencyManagement>
     <dependencies>
 
-      <!-- AOP Alliance -->
-      <dependency>
-        <groupId>aopalliance</groupId>
-        <artifactId>aopalliance</artifactId>
-        <version>1.0</version>
-      </dependency>
-
       <!-- AspectJ Runtime -->
       <dependency>
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjrt</artifactId>
-        <version>1.8.11</version>
+        <version>${aspectj.version}</version>
       </dependency>
 
       <!-- AspectJ Weaver -->
       <dependency>
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjweaver</artifactId>
-        <version>1.8.11</version>
+        <version>${aspectj.version}</version>
       </dependency>
 
       <!-- Spring JDBC -->
@@ -159,6 +154,7 @@
     <module>lab-3-core</module>
     <module>lab-4-core</module>
     <module>lab-5-aop</module>
+    <module>lab-6-jdbc</module>
   </modules>
 
 </project>
