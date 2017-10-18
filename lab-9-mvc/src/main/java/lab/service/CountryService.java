@@ -1,8 +1,8 @@
 package lab.service;
 
 import java.util.List;
-import lab.dao.UserDao;
-import lab.domain.User;
+import lab.dao.CountryDao;
+import lab.domain.Country;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Service;
@@ -12,24 +12,24 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Transactional
-public class UserService {
+public class CountryService {
 
-  private UserDao userDao;
+  private CountryDao countryDao;
 
   @Transactional(readOnly = true, propagation = Propagation.SUPPORTS, isolation = Isolation.READ_COMMITTED)
-  public List<User> loadAllUsers() {
-    List<User> userList = userDao.selectAll();
-    return userList;
+  public List<Country> loadAllCountries() {
+    List<Country> countries = countryDao.selectAll();
+    return countries;
   }
 
   @Transactional(propagation = Propagation.REQUIRES_NEW, isolation = Isolation.SERIALIZABLE)
-  public void saveUser(User user) {
-    userDao.insert(user);
+  public void saveCountry(Country country) {
+    countryDao.insert(country);
   }
 
-  @Autowired
   @Required
-  public void setUserDao(UserDao userDao) {
-    this.userDao = userDao;
+  @Autowired
+  public void setCountryDao(CountryDao countryDao) {
+    this.countryDao = countryDao;
   }
 }

@@ -156,6 +156,7 @@
     <module>lab-6-jdbc</module>
     <module>lab-7-orm</module>
     <module>lab-8-tx</module>
+    <module>lab-9-mvc</module>
   </modules>
 
 </project>
