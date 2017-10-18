@@ -1,17 +1,15 @@
 package lab.dao.jpa;
 
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
 import javax.persistence.PersistenceUnit;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 public class AbstractJpaDao {
 
-  protected EntityManagerFactory emf;
+  EntityManagerFactory emf;
 
-  public AbstractJpaDao() {
-    emf = Persistence.createEntityManagerFactory("spring.lab.orm.jpa");
-  }
-
+  @PersistenceUnit
   public void setEntityManagerFactory(EntityManagerFactory emf) {
     this.emf = emf;
   }

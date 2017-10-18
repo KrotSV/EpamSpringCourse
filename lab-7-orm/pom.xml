@@ -19,6 +19,13 @@
       <artifactId>spring-jdbc</artifactId>
     </dependency>
 
+    <!-- Spring ORM -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>5.0.0.RELEASE</version>
+    </dependency>
+
     <!-- HyperSQL Database -->
     <dependency>
       <groupId>org.hsqldb</groupId>
