@@ -11,8 +11,8 @@
 
   <properties>
     <spring.version>5.0.0.RELEASE</spring.version>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <aspectj.version>1.8.11</aspectj.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <dependencyManagement>
@@ -157,6 +157,7 @@
     <module>lab-7-orm</module>
     <module>lab-8-tx</module>
     <module>lab-9-mvc</module>
+    <module>lab-10-quartz</module>
   </modules>
 
 </project>
